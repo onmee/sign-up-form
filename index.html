@@ -16,7 +16,7 @@
             </p>
             <p>Sign up <em>now</em> to get started</p>
         </div>
-        <form action="get" class="sign-up">
+        <form action="get" class="sign-up" id="sign-up-form">
             <div class="form-row">
                 <label for="forename">First Name</label>
                 <input type="text" name="forename" id="forename">
@@ -44,7 +44,7 @@
             </div>
         </form>
         <div class="account">
-            <button>Submit</button>
+            <button type="submit" form="sign-up-form">Create Account</button>
             <p>Already have an account?<span>Log In</span></p>
         </div>
     </div>
