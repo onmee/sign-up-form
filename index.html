@@ -16,8 +16,37 @@
             </p>
             <p>Sign up <em>now</em> to get started</p>
         </div>
-        <div class="sign-up">Form</div>
-        <div class="account">Footer</div>
+        <form action="get" class="sign-up">
+            <div class="form-row">
+                <label for="forename">First Name</label>
+                <input type="text" name="forename" id="forename">
+            </div>
+            <div class="form-row">
+                <label for="surname">Last Name</label>
+                <input type="text" name="surname" id="surname">
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="you@email.com">
+            </div>
+            <div class="form-row">
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" placeholder="123-456-7890" 
+                       pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+            </div>
+            <div class="form-row">
+                <label for="pwd">Password</label>
+                <input type="password" name="password" id="pwd">
+            </div>
+            <div class="form-row">
+                <label for="confirm-pwd">Confirm Password</label>
+                <input type="password" name="confirm-password" id="confirm-pwd ">
+            </div>
+        </form>
+        <div class="account">
+            <button>Submit</button>
+            <p>Already have an account?<span>Log In</span></p>
+        </div>
     </div>
 </body>
 </html>
