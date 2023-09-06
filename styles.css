@@ -1,0 +1,9 @@
+.container {
+    min-height: 100vh-15px;
+    display: grid;
+    grid-template-rows: 80px 80px 1fr 80px;
+    width: calc(100vw - 20px); /*Leave 20px of the viewport for the margins*/
+    height: calc(100vh - 20px);
+    margin: 10px;
+    gap: 10px;
+}
