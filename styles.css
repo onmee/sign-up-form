@@ -1,9 +1,23 @@
 .container {
-    min-height: 100vh-15px;
+    min-width: 500px;
     display: grid;
-    grid-template-rows: 80px 80px 1fr 80px;
+    grid-template-rows: 15% 80px 1fr 80px;
     width: calc(100vw - 20px); /*Leave 20px of the viewport for the margins*/
     height: calc(100vh - 20px);
     margin: 10px;
     gap: 10px;
+}
+
+/*Maintain the aspect ratio of the image when the viewport size is changed*/
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.banner > img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
