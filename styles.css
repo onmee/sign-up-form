@@ -2,22 +2,32 @@
     min-width: 500px;
     display: grid;
     grid-template-rows: 15% 80px 1fr 80px;
-    width: calc(100vw - 20px); /*Leave 20px of the viewport for the margins*/
-    height: calc(100vh - 20px);
-    margin: 10px;
+    height: 100vh;
     gap: 10px;
+    margin: 5px;
 }
 
 /*Maintain the aspect ratio of the image when the viewport size is changed*/
 .banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    background-image: url(assets/sea-landscape-mobile.jpg);
+    background-position: center;
+    border-radius: 5px;
 }
 
-.banner > img {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
+
+/*Layout and styles for a desktop or larger screen*/
+@media screen and (min-width: 600px) {
+    .container {
+        margin: auto;
+        width: 80vw;
+        /*height: 100vh;*/
+        background: aliceblue;
+        grid-template: 2fr 1fr 2fr / 1.5fr 3fr;
+    }
+    .banner {
+        grid-row: 1 / 4;
+        background-image: url(assets/shifaaz-shamoon-okVXy9tG3KY-unsplash.jpg);
+        background-position: left 50%;
+    }
+
 }
