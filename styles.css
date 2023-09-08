@@ -16,7 +16,6 @@ body {
 .header {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin: auto;
     width: 80%;
     font-weight: 400;
@@ -58,6 +57,34 @@ body {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+.account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+}
+
+.pushable {
+    background: hsl(200, 100%, 32%);
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    width: 220px;
+}
+
+.front {
+    text-align: center;
+    display: block;
+    background: hsl(205deg 100% 47%);
+    color: white;
+    padding: 12px 32px;
+    font-size: 22px;
+    border-radius: 12px;
+    transform: translateY(-6px);
 }
 
 /*Layout and styles for a desktop or larger screen*/
