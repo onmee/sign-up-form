@@ -20,16 +20,16 @@
         <form action="get" id="sign-up-form">
             <p class="form-row">Let's do this!</p>
             <div class="form-row">
-                <label for="forename">First Name</label>
-                <input type="text" name="forename" id="forename">
+                <label for="forename">First Name *</label>
+                <input type="text" name="forename" id="forename" required>
             </div>
             <div class="form-row">
-                <label for="surname">Last Name</label>
-                <input type="text" name="surname" id="surname">
+                <label for="surname">Last Name *</label>
+                <input type="text" name="surname" id="surname" required>
             </div>
             <div class="form-row">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="you@email.com">
+                <label for="email">Email *</label>
+                <input type="email" name="email" id="email" placeholder="you@email.com" required>
             </div>
             <div class="form-row">
                 <label for="phone">Phone Number</label>
@@ -37,12 +37,12 @@
                        pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
             </div>
             <div class="form-row">
-                <label for="pwd">Password</label>
-                <input type="password" name="password" id="pwd">
+                <label for="pwd">Password *</label>
+                <input type="password" name="password" id="pwd" required>
             </div>
             <div class="form-row">
-                <label for="confirm-pwd">Confirm Password</label>
-                <input type="password" name="confirm-password" id="confirm-pwd ">
+                <label for="confirm-pwd">Confirm Password *</label>
+                <input type="password" name="confirm-password" id="confirm-pwd" required>
             </div>
         </form>
         <div class="account">
