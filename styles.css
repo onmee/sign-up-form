@@ -23,8 +23,9 @@ body {
     font-size: 24px;
 }
 
-.header p{
+.header p {
     margin-bottom: 15px;
+    align-self: flex-start;
 }
 
 .banner {
