@@ -21,11 +21,12 @@
             <p class="form-row">Let's do this!</p>
             <div class="form-row">
                 <label for="forename">First Name *</label>
-                <input type="text" name="forename" id="forename" required>
+                <!--Name must be formed of 3-20 characters from the english alphabet-->
+                <input type="text" name="forename" id="forename" pattern="[A-Za-z].{3,20}" required title="3 to 20 characters">
             </div>
             <div class="form-row">
                 <label for="surname">Last Name *</label>
-                <input type="text" name="surname" id="surname" required>
+                <input type="text" name="surname" id="surname" pattern="[A-Za-z].{3,20}"required title="3 to 20 characters">
             </div>
             <div class="form-row">
                 <label for="email">Email *</label>
@@ -38,11 +39,15 @@
             </div>
             <div class="form-row">
                 <label for="pwd">Password *</label>
-                <input type="password" name="password" id="pwd" required>
+                <!--Password should be 6 or more characters long and have atleast one number, and one lowercase and 
+                    uppercase characters-->
+                <input type="password" name="pwd" id="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" 
+                        required title="Password must have 6 or more characters, must include a number, lowercase
+                         and uppercase characters">
             </div>
             <div class="form-row">
                 <label for="confirm-pwd">Confirm Password *</label>
-                <input type="password" name="confirm-password" id="confirm-pwd" required>
+                <input type="password" name="confirm-pwd" id="confirm-pwd" required>
             </div>
         </form>
         <div class="account">
