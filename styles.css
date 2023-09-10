@@ -3,6 +3,7 @@
 :root {
     --box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
     --account-colour: hsl(205deg 100% 47%);
+    --hover-colour: hsl(200, 100%, 32%);
 }
 
 /*Override default black outline in Chrome*/
@@ -15,7 +16,7 @@ body {
 }
 
 .container {
-    min-width: 500px;
+    min-width: 525px;
     display: grid;
     grid-template-rows: 15% 170px 1fr 110px;
     background: rgb(237, 240, 241);
@@ -107,17 +108,26 @@ a {
 }
 
 input:focus {
-    background-color: ivory;
+    background: ivory;
     border-color: var(--account-colour);
 }
 
 input:focus:valid {
-    background-color: rgba(194, 235, 194, 0.63);
+    background: rgba(194, 235, 194, 0.63);
 }
 
 input:focus:invalid {
-    background-color: rgba(236, 198, 198, 0.63);
+    background: rgba(236, 198, 198, 0.63);
 }
+
+button:hover {
+    background: var(--hover-colour);
+}
+
+a:hover {
+    color: var(--hover-colour);
+}
+
 
 /*Layout and styles for a desktop or larger screen*/
 @media screen and (min-width: 800px) {
