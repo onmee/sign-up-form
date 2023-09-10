@@ -5,6 +5,11 @@
     --account-colour: hsl(205deg 100% 47%);
 }
 
+/*Override default black outline in Chrome*/
+*:focus,*:hover{
+    outline:none;
+}
+
 body {
     font-family: 'Ubuntu', sans-serif;
 }
@@ -70,6 +75,7 @@ body {
 input {
     padding: 0.5em;
     border-radius: 5px;
+    border: 2px solid #d6d9dc;
 }
 
 .account {
@@ -100,8 +106,14 @@ a {
     font-weight: 600;
 }
 
+input:focus {
+    background-color: ivory;
+    border-color: var(--account-colour);
+}
+
+
 /*Layout and styles for a desktop or larger screen*/
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
     .container {
         margin: auto;
         grid-template: 1.5fr 1fr 1.5fr / 1.5fr 3fr;
