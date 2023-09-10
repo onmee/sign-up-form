@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300;400&display=swap");
 
 :root {
-    --box-shadow: 0px 0px 5px 5px rgba(191,191,191,1);
+    --box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
     --account-colour: hsl(205deg 100% 47%);
 }
 
@@ -37,6 +37,7 @@ body {
     background-image: url(assets/sea-landscape-mobile.jpg);
     background-position: center;
     border-radius: 5px;
+    box-shadow: var(--box-shadow);
 }
 
 #sign-up-form {
@@ -48,6 +49,7 @@ body {
     border-radius: 5px;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
+    box-shadow: var(--box-shadow);
 }
 
 .form-row {
@@ -88,6 +90,7 @@ button {
     padding: 12px 32px;
     color: white;
     margin: 10px 0 10px 0px;
+    box-shadow: var(--box-shadow);
 
 }
 
@@ -107,7 +110,6 @@ a {
         grid-row: 1 / 4;
         background-image: url(assets/shifaaz-shamoon-okVXy9tG3KY-unsplash.jpg);
         background-position: left 50%;
-        box-shadow: var(--box-shadow);
     }
 
     .header {
@@ -122,7 +124,6 @@ a {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: unset;
-        box-shadow: var(--box-shadow);
     }
     .form-row {
         width: 40%;
