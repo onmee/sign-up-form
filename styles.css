@@ -111,6 +111,13 @@ input:focus {
     border-color: var(--account-colour);
 }
 
+input:focus:valid {
+    background-color: rgba(194, 235, 194, 0.63);
+}
+
+input:focus:invalid {
+    background-color: rgba(236, 198, 198, 0.63);
+}
 
 /*Layout and styles for a desktop or larger screen*/
 @media screen and (min-width: 800px) {
