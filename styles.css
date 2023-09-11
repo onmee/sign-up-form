@@ -41,16 +41,18 @@ body {
 
 
 .banner {
-    display: flex;
     background-image: url(assets/sea-landscape-mobile.jpg);
     background-position: center;
     border-radius: 5px;
+    background-repeat: no-repeat;
     box-shadow: var(--box-shadow);
 }
 
 .logo {
     display: flex;
-    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .logo img {
@@ -58,10 +60,9 @@ body {
 }
 
 h1 {
+    margin-left: 20px;
     line-height: 1;
     align-self: flex-end;
-    margin-left: 20px;
-    font-size: 32px;
     background: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);    
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -162,7 +163,6 @@ a:hover {
     .banner {
         grid-row: 1 / 4;
         background-image: url(assets/shifaaz-shamoon-okVXy9tG3KY-unsplash.jpg);
-        background-position: left 50%;
     }
 
     .header {
@@ -189,5 +189,16 @@ a:hover {
     .account {
         margin: unset;
         padding: 50px 0 0 50px;
+    }
+    .logo {
+        position: relative;
+        top: 15vh;
+        background: rgba(42, 44, 42, 0.5);
+    }
+    .logo img {
+        height: 12vh;
+    }
+    h1 {
+        font-size: 48px;
     }
 }
