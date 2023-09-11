@@ -41,7 +41,7 @@ body {
 
 
 .banner {
-    background-image: url(assets/sea-landscape-mobile.jpg);
+    background-image: url(assets/beach-landscape-mobile.jpg);
     background-position: center;
     border-radius: 5px;
     background-repeat: no-repeat;
@@ -89,6 +89,7 @@ h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     box-shadow: var(--box-shadow);
+    padding: 10px 0 10px 0;
 }
 
 .form-row {
@@ -174,7 +175,7 @@ a:hover {
     .banner {
         position: relative;
         grid-row: 1 / 4;
-        background-image: url(assets/shifaaz-shamoon-okVXy9tG3KY-unsplash.jpg);
+        background-image: url(assets/beach-portrait-desktop.jpg);
     }
 
     .header {
