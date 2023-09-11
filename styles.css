@@ -39,11 +39,32 @@ body {
     align-self: flex-start;
 }
 
+
 .banner {
+    display: flex;
     background-image: url(assets/sea-landscape-mobile.jpg);
     background-position: center;
     border-radius: 5px;
     box-shadow: var(--box-shadow);
+}
+
+.logo {
+    display: flex;
+    margin: auto;
+}
+
+.logo img {
+    height: 8vh;
+}
+
+h1 {
+    line-height: 1;
+    align-self: flex-end;
+    margin-left: 20px;
+    font-size: 32px;
+    background: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);    
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 #sign-up-form {
@@ -133,7 +154,7 @@ a:hover {
 
 
 /*Layout and styles for a desktop or larger screen*/
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 950px) {
     .container {
         margin: auto;
         grid-template: 1.5fr 1fr 1.5fr / 1.5fr 3fr;
