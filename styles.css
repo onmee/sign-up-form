@@ -108,16 +108,19 @@ a {
 }
 
 input:focus {
-    background: ivory;
     border-color: var(--account-colour);
 }
 
-input:focus:valid {
+input:required:valid {
     background: rgba(194, 235, 194, 0.63);
 }
 
-input:focus:invalid {
+input:required:focus:invalid {
     background: rgba(236, 198, 198, 0.63);
+}
+
+input:optional {
+    background: lightgrey;
 }
 
 button:hover {
