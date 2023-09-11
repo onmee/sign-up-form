@@ -59,6 +59,16 @@ body {
     height: 8vh;
 }
 
+#attribution {
+    display: none;
+    padding-left: 15px;
+    color: white; 
+}
+#attribution a {
+    color: white;
+    font-size: 18px;
+}
+
 h1 {
     margin-left: 20px;
     line-height: 1;
@@ -125,7 +135,7 @@ button {
 
 a {
     text-decoration: none;
-    color: var(--account-colour);
+    color: #FF5ACD;
     font-weight: 600;
 }
 
@@ -161,6 +171,7 @@ a:hover {
         grid-template: 1.5fr 1fr 1.5fr / 1.5fr 3fr;
     }
     .banner {
+        position: relative;
         grid-row: 1 / 4;
         background-image: url(assets/shifaaz-shamoon-okVXy9tG3KY-unsplash.jpg);
     }
@@ -194,11 +205,17 @@ a:hover {
         position: relative;
         top: 15vh;
         background: rgba(42, 44, 42, 0.5);
+        padding: 15px;
     }
     .logo img {
         height: 12vh;
     }
     h1 {
         font-size: 48px;
+    }
+    #attribution {
+        display: block;
+        position: absolute;
+        bottom: 15px;
     }
 }
